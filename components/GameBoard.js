@@ -6,8 +6,8 @@ const numRows = 20;
 const numCols = 20;
 
 // Calculate the size of each cell based on screen dimensions
-const { width } = Dimensions.get('window');
-const cellSize = width / numCols;
+const { width } = Dimensions.get('window'); 
+const cellSize = (width-40 )/ numCols;// Subtracting 40 for padding
 
 const GameBoard = () => {
   // Define the initial position of the snake as an array of cells

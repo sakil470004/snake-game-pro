@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import Status from "../components/Status";
 import GameBoard from "../components/GameBoard";
+import GameController from "../components/GameController";
 
 function GameScreen() {
   return (
@@ -9,7 +10,7 @@ function GameScreen() {
 
 <GameBoard/>
         
-        {/* Controller */}
+        <GameController/>
     </View>
   );
 }

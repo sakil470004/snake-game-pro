@@ -10,7 +10,6 @@ export default function App() {
 
       <StatusBar style="auto" />
       
-      <Status/>
       <GameScreen />
     </View>
   );
@@ -22,5 +21,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.rootBackground,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
   },
 });
