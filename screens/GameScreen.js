@@ -1,10 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
+import Status from "../components/Status";
+import GameBoard from "../components/GameBoard";
 
 function GameScreen() {
   return (
-    <View>
-        <Text>Game Screen</Text>
+    <View style={styles.container}>
+<Status/>
+
+<GameBoard/>
         
+        {/* Controller */}
     </View>
   );
 }
