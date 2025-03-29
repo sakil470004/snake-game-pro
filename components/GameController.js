@@ -10,6 +10,9 @@ const GameController = ({ onMove }) => {
   };
 
   return (
+    <View style={styles.screen}>
+
+  
     <View style={styles.container}>
       <View style={styles.row}>
         <TouchableOpacity
@@ -43,16 +46,24 @@ const GameController = ({ onMove }) => {
         </TouchableOpacity>
       </View>
     </View>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
+    screen: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex:1,
+    },
   container: {
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 20,
-  },
+},
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
